@@ -24,7 +24,7 @@ print "============================================"
 # get the relevant information for our employees and use COUNT()
 # to get the number of orders for each
 for employee in list_of_employers:
-	for results in c.execute("""SELECT COUNT(e.EmployeeID), e.FirstName, e.LastName, 
+	for results in c.execute("""SELECT COUNT(e.EmployeeID), e.FirstName, e.LastName
 								 FROM Employees e
 								 inner join Orders o
 								 	on o.EmployeeID =  e.EmployeeID
