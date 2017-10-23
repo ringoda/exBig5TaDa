@@ -16,7 +16,7 @@ for employee in db.employees.find():
 print "Nr. Of Orders\tFirst Name\tLast Name"
 print "============================================"
 
-#Find and collect 'ALFKI' products from his orderIDs
+#Loop through all employeeIDs
 for employeeid in list_of_employees:
 	#Get the employee information
 	employee = db.employees.find_one({'EmployeeID': employeeid})
